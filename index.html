@@ -1,0 +1,512 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello HeeJung's portfolio</title>
+    <meta name="description" content="Portfolio for frontend engineer Heejung">
+    <meta name="author"content="HeeJung">
+    <script src="https://kit.fontawesome.com/453205446a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/main.js"defer></script>
+</head>
+<body>
+
+<!-- home -->
+<div class="container">
+<section id="home">
+ <header class="home__box">
+   <img src="src/image/1.png" alt="">
+   <article class="home__intro">
+     <h1>SON HEE JEONG</h1>
+     <article class="intro">
+      <p>반갑습니다.</p>
+      <div class="one"> 항상</div>
+      <div class="two"> 노력하는 </div>
+      <div class="three">개발자 손희정입니다</div>
+     </article>
+   </article>
+   <article class="home__icon">
+    <a href="https://github.com/heejung-gjt" target="_blank"><i class="fab fa-github"id="homeicon"></i></a>
+    <a href="https://heejung-gjt.github.io/" target="_blank"><i class="fab fa-blogger-b"id="homeicon"></i></a>
+   </article>
+ </header>
+</section>
+
+
+
+<!-- navi -->
+  <nav id="navi">
+    <ul class="navi__gnb">
+      <li class="gnb__menu" data-link="#home">Home</li>
+      <li class="gnb__menu" data-link="#about">About</li>
+      <li class="gnb__menu" data-link="#skills">Skills</li>
+      <li class="gnb__menu" data-link="#project">Project</li>
+      <li class="gnb__menu" data-link="#education">Education</li>
+    </ul>
+  </nav>
+
+
+
+
+<!--about-->
+<section id="about">
+  <div class="common">
+    <h2 class="main__menus"><i class="fas fa-caret-right"id="main_icon"></i>ABOUT ME</h2>
+    <div class="about__box">
+        <section class="about__me">
+          <img src="src/image/heejung02.jpg" alt="heejug_img">
+          <article class="about__infor">
+            <h2>"초심불망 마부작침, 개발을 하겠다는 처음 그 마음을 잊지않고 끊임없이 도전하고 싶었습니다"</h2>
+            <p> 학교에서 안드로이드 스튜디오 프로그래밍 수업을 들은 후 조원과 함께 대회에 참가하였습니다. 이때 개발을 처음 접하게 되었습니다.
+              제가 생각한대로 원하는대로 무언가를 만들어낼수 있다는 것은 굉장히 매력적인 일이였습니다. 이러한 생각이 든 후, 진로를 개발로 정하게 되었고
+              꾸준히 개발 공부를 하고 있습니다. 계속해서 발전해나가는 수많은 언어들을 공부하고 따라잡기 위하여 
+              저는 현재 하루의 절반이상을 개발 공부에 몰두하고 있습니다.
+            </p>
+          </article>
+        </section>
+          <ul class="about__stack">
+            <li><img src="src/image/css.PNG" alt=""id="stack01"></li>
+            <li><img src="src/image/js.PNG" alt=""id="stack01"></li>
+            <li><img src="src/image/python.PNG" alt=""id="stack01"></li>
+            <li><img src="src/image/django01.PNG" alt=""id="stack01"></li>
+          </ul>
+    </div>
+</section>
+
+
+
+
+   <!-- skill -->
+ <section id="skills">
+  <div class="common">
+    <h2 class="main__menus"><i class="fas fa-caret-right"id="main_icon"></i>SKILLS</h2>
+  
+  <div class="skill__box">
+    <section class="skill__info">
+      <article class="skill__title">
+        <h2>" 다방면으로 지식을 쌓는 노력을 하고 있습니다. 더 많은 기술 스택을 경험해 보기 위한 자세를 갖추고 있습니다 "</h2>
+      </article>
+    </section>
+
+    <h4 class="skill__logo">MY SKILLS</h4>
+
+    <section class="stack__box">
+      <article class="skill__stack">
+
+        <div class="stack__name">
+          <span><img src="src/image/html.PNG" alt=""></span><span>70%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:orange; width: 70%;"></div>
+        </div>
+
+        <p class="stack__description">
+          html 템플릿을 직접 구상하여 구현할 수 있으며 웹 페이지를 구조적으로 이해하여 퍼블리싱 할 수 있습니다. 의미론적 마크업을 토대로 웹페이지를 구성할 수 있습니다.
+        </p>
+
+        <div class="stack__name">
+          <span><img src="src/image/css.PNG" alt=""></span><span>65%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:dodgerblue; width: 65%;"></div>
+        </div>
+
+        <p class="stack__description">
+          모바일에서도 유연하게 작동할 수 있도록 flex와 grid를 이용하여 반응형 웹디자인을 할 수 있습니다. 전통/모던 레이아웃 기법을 자유자재로 사용할 수 있습니다.
+        </p>
+
+        <div class="stack__name">
+          <span><img src="src/image/js.PNG" alt=""> </span><span>85%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar" style="background-color:#38B6FF; width:85%;"></div>
+        </div>
+
+        <p class="stack__description">
+          자바스크립트 기본 문법과 개념의 원리를 이해하고 DOM과 이벤트를 통한 인터랙티브 UI를 개발할 수 있습니다. 바닐라 자바스크립트를 활용하여 동적인 웹페이지를 만들어 낼 수 있습니다.
+        </p>
+
+        <div class="stack__name">
+          <span><img src="src/image/python.PNG" alt=""></span><span>70%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:orange; width:70%"></div>
+        </div>
+
+        <p class="stack__description">
+          파이썬의 기본 문법과 원리를 이해하고 원하는 정보를 크롤링하여 수집할 수 있습니다. 자료구조및 알고리즘을 파이썬을 활용하여 공부하였습니다.
+        </p>
+
+        <div class="stack__name">
+          <span><img src="src/image/django01.PNG" alt=""></span><span>75%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:orange; width:75%"></div>
+        </div>
+
+        <p class="stack__description">
+          장고 프레임워크를 통해 서버 및 웹서비스를 개발할 수 있습니다. 
+          장고의 기능들에 배우며, REST API를 활용하여 서비스를 만든 경험이 있습니다.
+        </p>
+      </article>
+
+      <article class="skill__stack">
+        <div class="stack__name">
+          <span><img src="src/image/python.PNG" alt=""></span><span>90%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:#38B6FF;"></div>
+        </div>
+
+        <p class="stack__description">
+         ~~~~~~~~~~~~~~~~ing
+        </p>
+
+        <div class="stack__name">
+          <span><img src="src/image/django.PNG" alt=""></span><span>90%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:orange"></div>
+        </div>
+
+        <p class="stack__description">
+          ~~~~~~~~~~~~~~~~ing
+        </p>
+
+        <div class="stack__name" style="margin-top: 100px;">
+          <span><img src="src/image/git.PNG" alt=""></span><span>60%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:orange; width:60%"></div>
+        </div>
+
+        <p class="stack__description">
+          정확한 깃의 개념과 동작 원리에 대해 이해하였습니다. 깃의 다양한 명령어와 활용을 할 수 있습니다.
+          진행하였던 프로젝트를 깃과 깃블로그를 통해 관리하고 있습니다.
+        </p>
+
+        <div class="stack__name">
+          <span><img src="src/image/boot.PNG" alt=""></span><span>90%</span>
+        </div>
+
+        <div class="stack__bar">
+          <div class="stack__fullbar"style="background-color:orange"></div>
+        </div>
+
+        <p class="stack__description">
+          ~~~~~~~~~~~~~~~~ing
+        </p>
+      </article>
+    </section>
+  </div>
+</div>
+</section>
+
+
+
+
+
+    <!-- porject -->
+    
+<section id="project">
+  <div class="common">
+    <h2 class="main__menus">
+      <i class="fas fa-caret-right"id="main_icon"></i>PROJECT
+    </h2>
+
+    <div class="project__show">
+      <article class="project__title">
+        <div class="project__info">
+          <a 
+          href="#" 
+          class="project"
+          target="blank"
+          >
+          <img
+          class="project__img" 
+          src="src/image/hee01.jpg" 
+          alt="#"
+          >
+          <div class="project__description">
+              <h3>Youtube Site</h3>
+              <p>Clone coding with HTML and CSS</p>
+          </div>
+          </a>
+          <div class="project__description02">
+           <p>
+             웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+          </p>
+          <div class="button">
+            <button class="detail">구현 기능 자세히 보기</button>
+            <button class="git">사이트가기</button>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+        </div>
+      </article>
+
+      <div class="project__title">
+        <div class="project__info">
+          <a 
+          href="#" 
+          class="project"
+          target="blank"
+          >
+          <img
+          class="project__img" 
+          src="src/image/bg3.PNG" 
+          alt="#"
+          >
+          <div class="project__description">
+              <h3>Youtube Site</h3>
+              <p>Clone coding with HTML and CSS</p>
+          </div>
+          </a>
+          <div class="project__description02">
+           <p>
+             웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+          </p>
+          <div class="button">
+            <button class="detail">구현 기능 자세히 보기</button>
+            <button class="git">사이트가기</button>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="project__title">
+        <div class="project__info">
+          <a 
+          href="#" 
+          class="project"
+          target="blank"
+          >
+          <img
+          class="project__img" 
+          src="src/image/bg2.png" 
+          alt="#"
+          >
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+              <p>Clone coding with HTML and CSS</p>
+          </div>
+          </a>
+          <div class="project__description02">
+           <p>
+             웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+          </p>
+          <div class="button">
+            <button class="detail">구현 기능 자세히 보기</button>
+            <button class="git">사이트가기</button>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="project__title">
+        <div class="project__info">
+          <a 
+          href="#" 
+          class="project"
+          target="blank"
+          >
+          <img
+          class="project__img" 
+          src="src/image/bg1.png" 
+          alt="#"
+          >
+          <div class="project__description">
+              <h3>Youtube Site</h3>
+              <p>Clone coding with HTML and CSS</p>
+          </div>
+          </a>
+          <div class="project__description02">
+           <p>
+             웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+          </p>
+          <div class="button">
+            <button class="detail">구현 기능 자세히 보기</button>
+            <button class="git">사이트가기</button>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="project__title">
+        <div class="project__info">
+          <a 
+          href="#" 
+          class="project"
+          target="blank"
+          >
+          <img
+          class="project__img" 
+          src="src/image/hee01.jpg" 
+          alt="#"
+          >
+          <div class="project__description">
+              <h3>Youtube Site</h3>
+              <p>Clone coding with HTML and CSS</p>
+          </div>
+          </a>
+          <div class="project__description02">
+           <p>
+             웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+          </p>
+          <div class="button">
+            <button class="detail">구현 기능 자세히 보기</button>
+            <button class="git">사이트가기</button>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="project__title ">
+        <div class="project__info">
+          <a 
+          href="#" 
+          class="project"
+          target="blank"
+          >
+          <img
+          class="project__img" 
+          src="src/image/hee01.jpg" 
+          alt="#"
+          >
+          <div class="project__description">
+              <h3>Youtube Site</h3>
+              <p>Clone coding with HTML and CSS</p>
+          </div>
+          </a>
+          <div class="project__description02">
+           <p>
+             웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+            장고 템플릿 문법을 적절히 적용하여 원하는 데이터를
+            원하는 위치에 넣을 수 있도록 연습하
+            원하는 위치에 넣을 수 있도록 연습하웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+          </p>
+          <div class="button">
+            <button class="detail">구현 기능 자세히 보기</button>
+            <button class="git">사이트가기</button>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+</section>
+
+<!-- education -->
+<section id="education">
+  <div class="common">
+    <h2 class="main__menus"><i class="fas fa-caret-right"id="main_icon"></i>EUDCATION</h2>
+
+    <div class="education__box">
+
+      <div class="education__line">
+        <div class="lines"></div>
+        <i class="fas fa-location-arrow"></i>
+        <i class="fas fa-location-arrow"></i>
+  
+      </div>
+
+      <ul class="education">
+        <li class="education__infor">
+          <h2>패스트캠퍼스 웹개발 부트캠프 수강</h2>
+        <p>
+          description~~~
+        </p>
+        </li>
+
+        <li class="education__infor">
+          <h2>개인 & 팀 프로젝트 진행</h2>
+        <p>
+          description~~
+        </p>
+        </li>
+      </ul>
+
+    </div>
+</section>
+
+<!-- study -->
+<section id="study">
+  <div class="common">
+    <h2 class="main__menus"><i class="fas fa-caret-right"id="main_icon"></i>STUDY</h2>
+
+    <div class="study__box">
+
+      <div class="study__line">
+        <div class="lines"></div>
+        <i class="fas fa-location-arrow"></i>
+        <i class="fas fa-location-arrow"></i>
+  
+      </div>
+
+      <ul class="study">
+        <li class="study__infor">
+          <h2>GIT과 GIT블로그를 이용한 스터디 진행</h2>
+        <p>
+        description-----
+        </p>
+        </li>
+
+        <li class="study__infor">
+          <h2>노마드 챌린지등 실전 프로젝트를 적극 이용한 스터디 진행</h2>
+        <p>
+          description-----
+        </p>
+        </li>
+      </ul>
+
+    </div>
+</section>
+</body>
+</html>
