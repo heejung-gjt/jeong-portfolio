@@ -742,3 +742,177 @@ button{
 .information{
     height: 300px;
 }
+
+/* 반응형 */
+
+@media screen and (max-width:1190px){
+    .main__menus{
+        font-size: 10px;
+    }
+    #main_icon{
+        font-size: 15px;
+        left: -10px;
+    }
+  
+    .home__intro p{
+        margin: 0;
+        padding: 0 45px;
+    }
+    .phone{
+        display: block
+    }
+  
+    .main__menus:after{
+        content: '';
+        margin-left: 5px;
+        width: 150px;height: 1px;
+        position: absolute;
+        left:97%;
+    }
+    .about__me{
+        flex-direction: column;
+    }
+    .about__me img{
+        margin: auto;
+    }
+    .stack__box{
+        flex-direction: column;
+        padding: 0;
+    }
+    .stack__name{
+    justify-content: space-between;
+    margin: 10px 20px;
+    }
+    .stack__description{
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
+    }
+    .stack__bar{
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+    }
+    /* .etc{
+        top: 50%;
+    } */
+    /* 스크롤 무반응 설정 */
+    .about__me{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .about__infor{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .about__stack{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .skill__info{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .skill__logo{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .stack__box{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .project__show{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .study{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .education{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width:1130px){
+    .study{
+        text-align: center;
+    }
+    .study__infor{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+    .study__infor img{
+        display: inline-block;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .study__infor div{
+        display: block;
+        width: 100%;
+    }
+    .study__infor div span{
+        display: inline-block;
+        margin:5px 0 0 0;
+    }
+    .study__line .fas:nth-child(2){
+        top: 95%;
+    }
+}
+@media screen and (max-width:560px){
+    div{
+        font-size: 1.0em;
+    }
+    h1,h2,h3,h4{
+        font-size: 1.0em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    .stack__description{
+        font-size: 0.9em;
+    }
+    #navi{
+        display: none;
+    }
+    .home__icon{
+        left: 50%;transform: translate(-50%,30px);
+    }
+    .intro div{
+        font-size: 14px;
+    }
+    .project__title{
+        width: 100%;
+    }
+    .project__img{
+        opacity: 0;
+    }
+    /* .project__description{
+        opacity: 0;
+    } */
+    .project__description02 {
+        margin-bottom: 20px;
+        opacity: 0.9;
+    }
+    .education__line,
+    .study__line{
+        display: none;
+    }
+    .education,
+    .study{
+        width: 100%;
+    }
+    .study__infor{
+        margin-top: 20px;
+    }
+    
+    }
+    @media screen and (max-width:330px){
+        .home__box img{
+            width: 300px;
+        }
+    }
