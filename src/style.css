@@ -581,3 +581,72 @@ button{
 .button .fab:hover{
     color:var(--white-color);
 }
+/* ---------------------------------education------------------------- */
+
+.education__box{
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+.education__line{
+    width: 20%;
+
+}
+
+.education__line .lines{
+    margin: 0px 30px 0;
+    width: 2px;height: 100%;
+    background-color:var(--dark-white);
+    position: absolute;
+    left: 15%;
+}
+.education__line .fas{
+    color: var(--dark-white);
+    position: absolute;
+   background-color: dodgerblue;
+    border-radius: 50%;
+    padding: 15px;
+    top:10%;left:15%; margin: 0px 5px 0;
+    animation: ani_icon 2s infinite;
+}
+@keyframes ani_icon{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.education__line .fas:nth-child(2){
+    color: var(--dark-white);
+    position: absolute;
+   background-color: palevioletred;
+    border-radius: 50%;
+    padding: 15px;
+    top:60%;left:15%; margin: 0px 5px 0;
+}
+
+.education{
+    width:70%;
+    position: relative;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 2s;
+}
+.education.change{
+    transform: translateX(0);
+    opacity: 1;
+}
+.education__infor{
+    background-color: var(--dark-white);
+    margin: 30px;
+    padding: 20px;
+}
+.education__infor p{
+    line-height: 30px;
+    
+
+}
