@@ -354,3 +354,106 @@ button{
 #stack01:hover{
     transform: rotateY(360deg);
 }
+/*----------------------------------------skill--------------------------------------*/
+#skills{
+    margin-bottom: 20px;
+}
+.skill__box{
+    margin-top: 70px;
+}
+.skill__info{
+     position: relative;
+     transform: translateX(-20%);
+     transition: all 2s;
+     opacity: 0;
+}
+.skill__title{
+    margin: 20px;
+
+}
+.skill__title h2{
+    text-align: center;
+}
+.skill__logo{
+    text-align: center;
+    margin: 80px 0 30px 0;
+    position: relative;
+    transform: translateX(-20%);
+    transition: all 1.5s;
+    opacity: 0;
+}
+.stack__box{
+    display: flex;
+    position: relative;
+    transform: translateX(20%);
+    transition: all 2s;
+    opacity: 0;
+}
+.skill__info.change{
+    transform: translateX(0);
+    opacity: 1;
+}
+.skill__logo.change{
+    transform: translateX(0);
+    opacity: 1;
+}
+.stack__box.change{
+    transform: translateX(0);
+    opacity: 1;
+   
+}
+
+.skill__stack{
+    width: 50%;
+    margin:10px;
+    padding: 40px 0;
+    position: relative;
+    border-radius: var(--base-radius);
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.479);
+}
+
+.etc{
+    top: 43%;left: 50%;transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    font-size: var(--h3-font);
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+.etc:before{
+    content: '-----------';
+    top: 50%;left: -90px;transform: translateY(-50%);
+    position: absolute;
+}
+.etc:after{
+    content: '-----------';
+    top: 50%;right: -90px;transform: translateY(-50%);
+    position: absolute;
+}
+.stack__name{
+    margin: 20px 0 5px 0;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 2px;
+}
+.stack__bar{
+    margin: 0 auto;
+    width: 60%;
+    height: 6px;
+    border: 1px solid var(--font-ccc);
+    border-radius: var(--base-radius);
+}
+.stack__fullbar{
+    width: 90%;
+    height: 6px;
+    border-radius: var(--base-radius);
+    background-color: dodgerblue;
+}
+.stack__description{
+    text-align: left;
+    margin: 20px auto;
+    width:60%;
+    font-size: 14px;
+    line-height: 30px;
+}
