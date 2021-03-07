@@ -240,3 +240,50 @@ button{
     background-color:rgba(30, 143, 255, 0.726);
 }
 
+/*----------------------------------------navi--------------------------------------*/
+#navi{
+    display: flex;
+    margin: 0 10px;
+    color:grey;
+    transition: all 500ms;
+}
+#navi.navi--dark{
+    top: 0;
+    height: 70px;
+    margin: 0 auto;
+    position: sticky;  /*fixed대신 sticky쓰면 nav값 변경 안됨*/
+    z-index: 1;
+    color: white;
+    background-color: dodgerblue;
+}
+#navi.navi--dark .gnb__menu:hover {
+    color: var(--black-color);
+}
+
+#navi a{
+    font-size: var(--h1-font);
+    text-decoration: none;
+    margin: auto 0;
+}
+.navi__gnb{
+    width: 1200px;
+    margin: 0 auto;
+    padding:10px 0;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.515);
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    list-style: none;
+}
+.gnb__menu{
+    margin: 10px auto;
+    padding:8px 12px ;
+    font-size:25px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.gnb__menu:hover{
+    color: dodgerblue;
+}
