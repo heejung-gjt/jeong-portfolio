@@ -287,3 +287,70 @@ button{
 .gnb__menu:hover{
     color: dodgerblue;
 }
+/*----------------------------------------about--------------------------------------*/
+#about{
+    transition: all 2s;
+}
+.about__box{
+    margin-top: 60px;
+}
+.about__me{
+    position: relative;
+    display: flex;
+    transform: translateX(-20%);
+    transition: all 2s;
+    opacity: 0;
+}
+.about__infor{
+    padding: 20px;
+    position: relative;
+    transform: translateX(50%);
+    transition: all 2s;
+    opacity: 0;
+}
+.about__infor.change{
+    transform: translateX(0);
+    opacity: 1;
+}
+.about__me.change{
+    transform: translateX(0);
+    opacity: 1;
+}
+.about__infor h2{
+    margin-bottom: 20px;
+}
+.about__infor p{
+    line-height: 30px;
+}
+.about__me img{
+    width: 180px;
+    height: 180px;
+    border-radius: var(--base-radius);
+}
+.about__stack{
+    margin-top: 20px ;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition: all 1.5s;
+    transform: translateX(-20%);
+    opacity: 0;
+    
+}
+.about__stack.change{
+    transform: translateX(0);
+    opacity: 1;
+}
+#stack01{
+    text-align: center;
+    margin: 10px;
+    padding: 45px;
+    line-height: 130px;
+    border-radius: var(--base-radius);
+    box-shadow: 0 0 6px rgba(128, 128, 128, 0.479);
+    transition: all 500ms;
+}
+#stack01:hover{
+    transform: rotateY(360deg);
+}
