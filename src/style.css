@@ -11,16 +11,17 @@ ul{
     padding: 0;
     list-style: none;
 }
-
+/* 숨김 콘텐츠 */
 .a11y-hidden{
-    overflow: hidden;
-    position: absolute !important;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
+    background-color: red;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
-}
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+  }
 .container{
     margin: 0 auto;
     max-width: 1200px;

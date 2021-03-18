@@ -28,5 +28,30 @@ HTML/CSS를 인터넷강의를 통하여 처음 접하게 되었습니다. 강�
 
 <br>
 
-## 2.전체적인 웹 사이트의 구조 분석
+## 2. 웹 사이트의 구조 분석
 
+<br>
+
+### header 마크업
+
+![header](https://user-images.githubusercontent.com/64240637/111625942-c3d11780-8830-11eb-86b9-b6cea0ebcc0f.png)
+
+
+1. 모든 컨텐츠에 동일한  width값 적용시키기 위해 div.container 태그를 사용
+   
+2.  header에 h1 숨김 제목 처리 
+   
+3.  article로 타이틀 인사말 마크업 , article h2 숨김 제목 처리, 각각의 인사말 문장 span으로 처리
+
+4. div안에 a링크, 깃허브, 블로그 링크, 이미지는 fontawesome 참고, span태그 이용    
+
+5. 화면이 780px이하인 경우 햄버거 버튼이 화면 상단 왼쪽에 위치할 수 있도록 header안에 마크업을 해주었다.  
+
+<br>
+
+### header 스타일링
+
+|레이아웃 배치|숨김콘텐츠 처리|background 이미지 처리|반응형 처리|
+|------------|----------|---------|----------|
+|<img src="https://user-images.githubusercontent.com/64240637/111627579-8a99a700-8832-11eb-8cae-ecec34062c94.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111626840-c97b2d00-8831-11eb-90fe-425a4c253406.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111627227-31317800-8832-11eb-9358-646f89e528f2.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111626827-c718d300-8831-11eb-8e46-79db8a33f89c.png" width=200px>|
+|article안 span태그로 묶여져 있는 문장들에 flex를 주어 column 방향으로 배치될 수 있게 스타일링 하였다. align-items:center를 주어 화면의 가운데에 배치시켰다. line-height를 주어 각 span간 간격을 띄어주었다.|top:-9999px와 같이 날릴 수 있지만 웹접근성을 따졌을때 스크린리더에서 접근할때 화면 스크롤이 갑자기 떠버릴 수 있기 때문에 숨김콘텐츠로 사용할 수 있는 방법 중 clip 요소를 이용하는 방법을 선택하였다.  |header의 이미지를 가상요소선택자를 이용하여 배경이미지로 주었다. z-index:-1을 주어 화면 가장 뒤에 깔릴 수 있게 하였다.|780px과 420px를 기준으로 화면의 텍스트 크기를 조절하였고 햄버거 버튼이 보일 수 있도록 display:block를 주었다|
