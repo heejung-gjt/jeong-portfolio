@@ -124,8 +124,48 @@ ul{
     padding: 10px;
     font-size: 2.0rem;
   }
-
-
+/* nav */
+.navigation{
+    font-size: 1.6rem;
+    color: gray;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    position: sticky;
+    transform: translateX(0);
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    padding: 25px 20px;
+    cursor: pointer;
+    outline: 0;
+    transition: 300ms;
+}
+.menu li:hover,
+.menu li:focus{
+    color: dodgerblue;
+}
+.is-close-menu{
+    display: none;
+}
+.is-open-menu {
+    cursor: pointer;
+    display: none;
+    border: none;
+    background:transparent;
+  }
+  .is-open-menu .ir {
+    position: sticky;
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    font-size: 2.0rem;
+  }
+/* 반응형 */
 @media screen and (max-width:780px){
     .container{
         position: relative;
@@ -140,7 +180,46 @@ ul{
         user-select: none;
         display: block;
     }
+    .navigation{
+        background-color: rgba(3, 3, 3, 0.938);
+        color: whitesmoke;
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        text-align: right;
+        top: 0;
+        z-index: 1;
+        transition: all 0.4s cubic-bezier(0.66, -0.01, 0.3, 0.99);
+        transform: translateX(-105vw);
+    }
+    .menu{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
 
+    }
+    .menu li{
+        padding: 10px 30px;
+        margin: 0 10px;
+        border-bottom: 1px solid rgb(37, 37, 37);
+    }
+    .is-close-menu{
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        color: whitesmoke;
+        left: 0;
+        top: 0;
+        font-size: 1.7rem;
+        border: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        
+    }
+    .is-close-menu .close{
+        display: block;
+    }
 @media screen and (max-width:420px){
     .header-title{
         font-size: 2.0rem;
