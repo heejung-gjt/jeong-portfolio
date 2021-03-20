@@ -81,8 +81,8 @@ HTML/CSS를 인터넷강의를 통하여 처음 접하게 되었습니다. 강�
 ### 2-4. nav 스타일링
 
 |메뉴 레이아웃 배치|메뉴 아이템 레이아웃 배치|반응형 처리|
-|------------|----------|---------|----------|
+|------------|----------|---------|
 |<img src="https://user-images.githubusercontent.com/64240637/111857366-53cbaa00-8974-11eb-849d-8d85df3fcc5a.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111857363-4e6e5f80-8974-11eb-8639-667b865fe79b.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111857368-562e0400-8974-11eb-9194-991d590d4f97.png" width=300px>|
---
+
 
 
