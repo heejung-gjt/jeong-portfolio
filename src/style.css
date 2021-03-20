@@ -112,17 +112,14 @@ ul{
 .is-open-menu {
     cursor: pointer;
     display: none;
+    position: sticky;
     border: none;
     background:transparent;
+    font-size: 2.0rem;
   }
-  .is-open-menu .ir {
-    position: sticky;
-    display: block;
-    cursor: pointer;
+  .fa-bars{
     width: 30px;
     height: 30px;
-    padding: 10px;
-    font-size: 2.0rem;
   }
 /* nav */
 .navigation{

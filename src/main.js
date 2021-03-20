@@ -2,7 +2,7 @@
 
 const nav = document.querySelector('.navigation');
 const ham = document.querySelector('.ir');
-let mql = window.matchMedia('screen and (max-width: 780px)');
+let navWindow = window.matchMedia('screen and (max-width: 780px)');
 
 // nav 반응형 
 function open_menu_button(){
@@ -11,7 +11,7 @@ function open_menu_button(){
 function close_menu_button(){
     nav.style.transform = `translateX(${-105}vw)`;
 }
-mql.addListener(function(e){
+navWindow.addListener(function(e){
     if(e.matches){
         nav.style.transform = `translateX(${-105}vw)`;
     }
@@ -19,3 +19,4 @@ mql.addListener(function(e){
         nav.style.transform = `translateX(${0}px)`;
     }
 })
+
