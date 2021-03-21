@@ -136,5 +136,12 @@ document.addEventListener('scroll',() =>{
 
 <br><br>
 
+> ## about-me
 
+### 2-6. about-me 마크업
+
+
+<br>
+
+### 2-7. about-me 스타일링 
 

@@ -1,13 +1,9 @@
-
-.yes{
-    height: 200px;
-}
 body{
     font-size: 10px;
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
 }
-h1{
+h1,h2{
     margin: 0;
 }
 ul{
@@ -31,6 +27,31 @@ ul{
     max-width: 1200px;
     min-height: 100vh;
     /* background-color: yellow; */
+}
+/* 공통 스타일 */
+.content{
+    margin-top: 150px;
+    /* background-color: pink; */
+}
+.title{
+    /* background-color: green; */
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 100px;
+    letter-spacing: 4px;
+    font-size: inherit;
+    font-weight: 500;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 200%;
+    height: 1px;
+    margin: 0;
+    background: #ccc;
 }
 
 /* header */
@@ -110,22 +131,6 @@ ul{
 }
 
 /* nav */
-.is-close-menu{
-    display: none;
-}
-.is-open-menu {
-    cursor: pointer;
-    display: none;
-    position: sticky;
-    border: none;
-    background:transparent;
-    font-size: 2.0rem;
-  }
-  .fa-bars{
-    width: 30px;
-    height: 30px;
-  }
-/* nav */
 .navigation{
     font-size: 1.6rem;
     color: gray;
@@ -168,7 +173,9 @@ ul{
     cursor: pointer;
     display: none;
     border: none;
+    position: fixed;
     background:transparent;
+
   }
   .is-open-menu .ir {
     position: sticky;
@@ -179,7 +186,52 @@ ul{
     padding: 10px;
     font-size: 2.0rem;
   }
-/* 반응형 */
+/* aboutme */
+.about-infor{
+    font-size: 16px;
+    text-align: left;
+}
+.about-introduce{
+    display: flex;
+}
+.about-image img{
+    display: block;  /* 밑에 생기는 공백없애기 위해*/
+    width: 200px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+.about-description{
+    padding: 0 10px;
+}
+.about-description em{
+    font-style:normal;
+    font-weight:600;
+}
+.about-description p{
+    font-weight:100;
+    line-height: 2;
+}
+.about-skill{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+}
+.about-skill img{
+    width: 45px;
+    height: 45px;
+    padding: 45px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgb(128 128 128 / 48%);
+    background-color: #fff;
+    transition: 300ms;
+}
+.about-skill img:hover{
+    transform: rotateY(360deg);
+}
+
 @media screen and (max-width:780px){
     .container{
         position: relative;
@@ -190,19 +242,16 @@ ul{
     .header-intro{
         font-size: 1.0rem;
     }
-    .is-open-menu {
-        user-select: none;
-        display: block;
-    }
+
     .navigation{
-        background-color: rgba(3, 3, 3, 0.938);
-        color: whitesmoke;
-        position: fixed;
         width: 70%;
         height: 100vh;
-        text-align: right;
+        position: fixed;
         top: 0;
         z-index: 1;
+        text-align: right;
+        color: whitesmoke;
+        background-color: rgba(3, 3, 3, 0.938);
         transition: all 0.4s cubic-bezier(0.66, -0.01, 0.3, 0.99);
         transform: translateX(-105vw);
     }
@@ -213,8 +262,8 @@ ul{
 
     }
     .menu li{
-        padding: 10px 30px;
         margin: 0 10px;
+        padding: 10px 30px;
         border-bottom: 1px solid rgb(37, 37, 37);
     }
     .is-close-menu{
@@ -234,6 +283,21 @@ ul{
     .is-close-menu .close{
         display: block;
     }
+    .is-open-menu {
+        display: block;
+    }
+    .about-introduce{
+        flex-direction: column;
+    }
+    .about-image{
+        margin: 0 auto;
+    }
+    .about-image{
+        margin-bottom: 20px;
+    }
+    .about-description{
+        text-align: center;
+    }
 @media screen and (max-width:420px){
     .header-title{
         font-size: 2.0rem;
@@ -242,3 +306,6 @@ ul{
 }
 }
 
+.skill div{
+    height: 200px;
+}
