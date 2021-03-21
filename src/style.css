@@ -1,3 +1,7 @@
+
+.yes{
+    height: 200px;
+}
 body{
     font-size: 10px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -130,6 +134,19 @@ ul{
     position: sticky;
     transform: translateX(0);
 }
+.navigation.nav-scroll{
+    position: sticky;  
+    top: 0;
+    margin: 0 auto;
+    height: 70px;
+    z-index: 1;
+    color: white;
+    background-color: dodgerblue;
+}
+.navigation.nav-scroll .menu li:hover,
+.navigation.nav-scroll .menu li:focus{
+    color: black;
+}
 .menu{
     display: flex;
     justify-content: space-around;
@@ -224,3 +241,4 @@ ul{
 
 }
 }
+

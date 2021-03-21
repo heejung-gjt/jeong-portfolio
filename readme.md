@@ -16,10 +16,11 @@
 2. 전체적인 웹 사이트의 구조 분석    
   2-1. header 마크업    
   2-2. header 스타일링      
-  2-3. nav 마크업            
-  2-4. nav 스타일링
-  2-5. about-me 마크업    
-  2-6. about-me 스타일링      
+  2-3. nav 마크업             
+  2-4. nav 스타일링    
+  2-5. nav 동적제어    
+  2-6. about-me 마크업        
+  2-7. about-me 스타일링        
 
 3. 개선한 웹 사이트 구조 분석    
 
@@ -33,6 +34,8 @@ HTML/CSS를 인터넷강의를 통하여 처음 접하게 되었습니다. 강�
 ## 2. 웹 사이트의 구조 분석
 
 <br>
+
+> ## header
 
 ### 2-1. header 마크업
 
@@ -52,17 +55,27 @@ HTML/CSS를 인터넷강의를 통하여 처음 접하게 되었습니다. 강�
 
 <br>
 
+
 ### 2-2. header 스타일링
 
-|레이아웃 배치|숨김콘텐츠 처리|background 이미지 처리|반응형 처리|
-|------------|----------|---------|----------|
-|<img src="https://user-images.githubusercontent.com/64240637/111627579-8a99a700-8832-11eb-8cae-ecec34062c94.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111626840-c97b2d00-8831-11eb-90fe-425a4c253406.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111627227-31317800-8832-11eb-9358-646f89e528f2.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111626827-c718d300-8831-11eb-8e46-79db8a33f89c.png" width=200px>|
-|article안 span태그로 묶여져 있는 문장들에 flex를 주어 column 방향으로 배치될 수 있게 스타일링 하였다. align-items:center를 주어 화면의 가운데에 배치시켰다. line-height를 주어 각 span간 간격을 띄어주었다.|top:-9999px와 같이 날릴 수 있지만 웹접근성을 따졌을때 스크린리더에서 접근할때 화면 스크롤이 갑자기 떠버릴 수 있기 때문에 숨김콘텐츠로 사용할 수 있는 방법 중 clip 요소를 이용하는 방법을 선택하였다.  |header의 이미지를 가상요소선택자를 이용하여 배경이미지로 주었다. z-index:-1을 주어 화면 가장 뒤에 깔릴 수 있게 하였다.|780px과 420px를 기준으로 화면의 텍스트 크기를 조절하였고 햄버거 버튼이 보일 수 있도록 display:block를 주었다|
 
-<br>
+|레이아웃 배치|숨김콘텐츠 처리|
+|------------|----------|
+|<img src="https://user-images.githubusercontent.com/64240637/111627579-8a99a700-8832-11eb-8cae-ecec34062c94.png" width=400px; height=200px;>|<img src="https://user-images.githubusercontent.com/64240637/111626840-c97b2d00-8831-11eb-90fe-425a4c253406.png" width=400px; height=200px;>|
+|article안 span태그로 묶여져 있는 문장들에 flex를 주어 column 방향으로 배치될 수 있게 스타일링 하였다. align-items:center를 주어 화면의 가운데에 배치시켰다. line-height를 주어 각 span간 간격을 띄어주었다.|top:-9999px와 같이 날릴 수 있지만 웹접근성을 따졌을때 스크린리더에서 접근할때 화면 스크롤이 갑자기 떠버릴 수 있기 때문에 숨김콘텐츠로 사용할 수 있는 방법 중 clip 요소를 이용하는 방법을 선택하였다.|
+
+|background 이미지 처리|반응형 처리|
+|------------|----------|
+|<img src="https://user-images.githubusercontent.com/64240637/111627227-31317800-8832-11eb-9358-646f89e528f2.png" height=300px; width=400px;>|<img src="https://user-images.githubusercontent.com/64240637/111626827-c718d300-8831-11eb-8e46-79db8a33f89c.png" width=400px; height=300px;>|
+|header의 이미지를 가상요소선택자를 이용하여 배경이미지로 주었다. z-index:-1을 주어 화면 가장 뒤에 깔릴 수 있게 하였다.|780px과 420px를 기준으로 화면의 텍스트 크기를 조절하였고 햄버거 버튼이 보일 수 있도록 display:block를 주었다|
+
+<br><br>
+
+> ## nav
 
 ### 2-3. nav 마크업
-![nav](https://user-images.githubusercontent.com/64240637/111856836-c9ce1200-8970-11eb-9cac-7611ca5e6e6d.png)
+
+<img src="https://user-images.githubusercontent.com/64240637/111856836-c9ce1200-8970-11eb-9cac-7611ca5e6e6d.png" width=800px>
 
 
 1. 메뉴바이므로 ```nav```로 마크업하였다.
@@ -70,7 +83,8 @@ HTML/CSS를 인터넷강의를 통하여 처음 접하게 되었습니다. 강�
 2. 메뉴바의 아이템들을 ```ul>li```로 마크업하였다
    
 
-![nav2](https://user-images.githubusercontent.com/64240637/111856838-ccc90280-8970-11eb-88c1-ae5f29629eec.png)
+
+<img src="https://user-images.githubusercontent.com/64240637/111856838-ccc90280-8970-11eb-88c1-ae5f29629eec.png" width=800px>
 
 3. 780px이하인 경우 왼쪽 상단에 버튼이 생길 수 있게 ```button>span```으로 마크업하였다. 이때 아이콘은 header에 마크업하였다. 두번째 ```X```span태그에 텍스트로 작성한뒤 aria-hidden을 true로 적용시켜 스크린리더가 x를 텍스트 x로 읽지 못하게 해주었다.    
 
@@ -83,6 +97,44 @@ HTML/CSS를 인터넷강의를 통하여 처음 접하게 되었습니다. 강�
 |메뉴 레이아웃 배치|메뉴 아이템 레이아웃 배치|반응형 처리|
 |------------|----------|---------|
 |<img src="https://user-images.githubusercontent.com/64240637/111857366-53cbaa00-8974-11eb-849d-8d85df3fcc5a.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111857363-4e6e5f80-8974-11eb-8639-667b865fe79b.png" width=300px>|<img src="https://user-images.githubusercontent.com/64240637/111857368-562e0400-8974-11eb-9194-991d590d4f97.png" width=300px>|
+
+<br>
+
+### 2-5. nav 동적제어(js)
+```javascript
+'use strict';
+
+const nav = document.querySelector('.navigation');
+const ham = document.querySelector('.ir');
+const headerHeight = document.querySelector('.header');
+const homeHeight =headerHeight.getBoundingClientRect().height;
+let mql = window.matchMedia('screen and (max-width: 780px)');
+
+// nav 반응형 
+function open_menu_button(){
+    nav.style.transform = `translateX(${0}px)`;
+}
+function close_menu_button(){
+    nav.style.transform = `translateX(${-105}vw)`;
+}
+mql.addListener(function(e){
+    if(e.matches){
+        nav.style.transform = `translateX(${-105}vw)`;
+        nav.classList.remove('nav-scroll');
+    }else nav.style.transform = `translateX(${0}px)`;
+});
+
+//메뉴바 스크롤 컨트롤
+document.addEventListener('scroll',() =>{
+    if(window.scrollY > homeHeight){
+        if(window.innerWidth < 780) nav.classList.remove('nav-scroll');
+        else nav.classList.add('nav-scroll');
+    }else nav.classList.remove('nav-scroll');
+});
+
+```
+
+<br><br>
 
 
 
